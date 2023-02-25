@@ -19,3 +19,13 @@ function findMinNumber(array) {
 }
 
 findMinNumber(arr);
+
+function findMaxNumber(array) {
+  let maxNumber = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (maxNumber < array[i]) maxNumber = array[i];
+  }
+  console.log('maxNumber = ', maxNumber);
+}
+
+findMaxNumber(arr);
