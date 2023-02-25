@@ -7,4 +7,15 @@ function countTotal(array) {
   }
   console.log('total = ', total);
 }
+
 countTotal(arr);
+
+function findMinNumber(array) {
+  let minNumber = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (minNumber > array[i]) minNumber = array[i];
+  }
+  console.log('miniNumber = ', minNumber);
+}
+
+findMinNumber(arr);
