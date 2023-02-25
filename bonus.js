@@ -1,4 +1,4 @@
-const arr = [1, 3, 5, 7, 9];
+const arr = [1, 3, 5, 7, 9, 2];
 
 function countTotal(array) {
   let total = 0;
@@ -29,3 +29,13 @@ function findMaxNumber(array) {
 }
 
 findMaxNumber(arr);
+
+function findEvenElement(array) {
+  const evenArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) evenArray.push(array[i]);
+  }
+  console.log('evenArray = ', evenArray);
+}
+
+findEvenElement(arr);
